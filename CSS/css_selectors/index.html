@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css selectors -->
+
+    <!-- 1.element selector  -->
+    <!-- 2.class selector  -->
+    <!-- 3.Id selector  -->
+    <!-- 4.Attribute selector  -->
+    <!-- 5.Universal selector  -->
+
+    <style>
+      /* level of specificity */
+      /* 1. id selector  */
+      /* 2. attribute selector  */
+      /* 3. class selector  */
+      /* 4. element selector  */
+      /* 5. universal selector  */
+      h1 {
+        color: blue;
+        font-size: 10px;
+        font-size: 30px;
+      }
+
+      /* h2 {
+        color: green;
+      } */
+
+      .purple {
+        color: purple;
+      }
+
+      #yellow {
+        color: yellow;
+      }
+
+      h1[draggable="true"] {
+        color: red;
+      }
+
+      * {
+        color: chocolate;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="purple" draggable="true">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.
+    </h1>
+
+    <h2 id="yellow">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam soluta
+      itaque at cumque, ullam culpa omnis quam est necessitatibus perspiciatis?
+    </h2>
+
+    <p class="purple">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore quo
+      dicta! Vel impedit itaque provident sit amet reprehenderit modi debitis
+      cupiditate! Illo laudantium id, mollitia consectetur aut sequi et.
+    </p>
+
+    <h1 class="purple">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.
+    </h1>
+
+    <p id="yellow">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, fugit
+      sapiente? Aliquid voluptas vitae aperiam. Reiciendis a illum dicta
+      accusantium, ex in id quasi iure blanditiis. Aspernatur fugiat saepe
+      pariatur.
+    </p>
+
+    <div draggable="true">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae
+      neque quasi quisquam illo voluptatem accusantium debitis ullam dicta in,
+      autem, aliquid veniam eius temporibus? Error hic alias nemo delectus.
+    </div>
+
+    <div draggable="false">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat
+      soluta voluptatum eos ducimus praesentium, laboriosam id doloribus dolores
+      rerum velit, facilis dignissimos porro quasi sit eius quisquam numquam
+      aliquid.
+    </div>
+  </body>
+</html>
