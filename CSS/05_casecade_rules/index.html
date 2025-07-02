@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casecade rules</title>
+
+    <!-- 
+    1. Position (lower will apply first)
+    2. Specificity 
+       1.universal
+       2.element selector
+       3.class
+       4.attribute 
+       5.id
+    3. Type
+       1.External
+       2.Internal
+       3.Inline
+    4. Important
+     -->
+
+    <style>
+      #violet {
+        color: blueviolet;
+      }
+
+      #yellow {
+        color: yellow;
+      }
+
+      .blue {
+        color: blue;
+        color: green;
+      }
+    </style>
+
+    <link rel="stylesheet" href="external.css" />
+  </head>
+  <body>
+    <p class="yellow" id="violet">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
