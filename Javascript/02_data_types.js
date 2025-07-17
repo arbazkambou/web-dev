@@ -1,23 +1,51 @@
 //  1. Primitive Data Types
 
-// String
-let password = 5;
+// string
 
-// Boolean
-let isMarried = false;
+let name = "arbaz";
 
-// Number
-let rollNumber = 5;
+//boolean
 
-let res = password + rollNumber;
+let isLoggedIn = true;
 
-console.log(res);
+//number
 
-// undefined
-let num1;
+let marks = 100;
 
-// null
-// BigInt
-// Symbol
+//undefined
 
-// console.log(typeof password);
+let abc;
+
+//Big Int
+
+//null
+
+let temp = 0;
+
+let emptyValue = null;
+
+//Symbol
+
+//2. Non Primitive
+
+//Object
+
+let user = {
+  name: "Arbaz",
+  age: 25,
+  email: "expample@gmail.com",
+};
+
+//Arrays
+
+let subjects = ["physics", 12, { name: "Arbaz" }];
+
+//Funtions
+
+function sayHello() {
+  console.log("Hello Khalid");
+}
+
+sayHello();
+
+// console.log(subjects[2].name);

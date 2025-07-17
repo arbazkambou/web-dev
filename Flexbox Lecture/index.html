@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Layout Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        /* padding: 20px; */
+        background-color: #f9f9f9;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .container {
+        margin-top: 30px;
+        display: flex;
+        /* flex-direction: column; */
+        /* gap: 30px; */
+        gap: 10px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        border: 2px solid black;
+        height: 50vh;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+      }
+
+      .box {
+        color: white;
+        padding: 20px;
+        /* margin-bottom: 15px; */
+        border-radius: 6px;
+      }
+
+      .box1 {
+        background-color: #ff6b6b;
+        /* order: 2; */
+        /* flex-shrink: 2; */
+        align-self: center;
+        flex-basis: 200px;
+      }
+
+      .box2 {
+        background-color: #4dabf7;
+        /* order: 1; */
+        /* flex-grow: 2; */
+      }
+
+      .box3 {
+        background-color: #51cf66;
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Box Layout</h1>
+
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+  </body>
+</html>
