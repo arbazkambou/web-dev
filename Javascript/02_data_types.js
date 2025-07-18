@@ -4,6 +4,14 @@
 
 let name = "arbaz";
 
+name[0] = "b";
+
+let numbers = [1, 2, 3];
+
+numbers.unshift(0);
+
+console.log(numbers[0]);
+
 //boolean
 
 let isLoggedIn = true;
@@ -46,6 +54,6 @@ function sayHello() {
   console.log("Hello Khalid");
 }
 
-sayHello();
+// sayHello();
 
 // console.log(subjects[2].name);
